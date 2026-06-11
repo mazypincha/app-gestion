@@ -1,0 +1,7 @@
+<div *ngIf="user" style="background: white; padding: 25px; border-radius: 6px; border: 1px solid #ddd;">
+    <h3>Perfil del Usuario: {{ user.nombre }}</h3>
+    <p><strong>Correo de Contacto:</strong> {{ user.email }}</p>
+    <p><strong>Rol Asignado:</strong> {{ user.rol }}</p>
+    <p><strong>Estado en el Sistema:</strong> {{ user.activo ? 'Habilitado' : 'Suspendido' }}</p>
+    <button routerLink="/usuarios" style="margin-top:15px; padding: 8px 15px; cursor:pointer;">Volver al Listado</button>
+</div>

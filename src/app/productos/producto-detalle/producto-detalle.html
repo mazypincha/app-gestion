@@ -1,0 +1,7 @@
+<div *ngIf="prod" style="background: white; padding: 25px; border-radius: 6px; border: 1px solid #ddd;">
+    <h3>Ficha Técnica: {{ prod.titulo }}</h3>
+    <p><strong>Identificador Único:</strong> #{{ prod.id }}</p>
+    <p><strong>Descripción Detallada:</strong> {{ prod.descripcion }}</p>
+    <p><strong>Precio Base de Mercado:</strong> {{ prod.precio | currency:'ARS' }}</p>
+    <button routerLink="/productos" style="margin-top:15px; padding: 8px 15px; cursor:pointer;">Volver al Catálogo</button>
+</div>

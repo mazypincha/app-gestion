@@ -1,0 +1,22 @@
+<h2>Formulario: Crear Nuevo Usuario</h2>
+<form [formGroup]="form" (ngSubmit)="guardar()" style="background:white; padding:20px; border-radius:6px; max-width:400px; border:1px solid #ddd;">
+    <div style="margin-bottom:12px;">
+    <label style="display:block; margin-bottom:5px;">Nombre Completo</label>
+    <input type="text" formControlName="nombre" style="width:100%; padding:8px; box-sizing:border-box;" />
+    </div>
+    <div style="margin-bottom:12px;">
+    <label style="display:block; margin-bottom:5px;">Correo Electrónico</label>
+    <input type="email" formControlName="email" style="width:100%; padding:8px; box-sizing:border-box;" />
+    </div>
+    <div style="margin-bottom:12px;">
+    <label style="display:block; margin-bottom:5px;">Rol Funcional</label>
+    <select formControlName="rol" style="width:100%; padding:8px; box-sizing:border-box;">
+        <option value="Administrador">Administrador</option>
+        <option value="Desarrollador">Desarrollador</option>
+        <option value="Visualizador">Visualizador</option>
+    </select>
+    </div>
+    <button type="submit" [disabled]="form.invalid" style="background:#27ae60; color:white; padding:10px 15px; border:none; border-radius:4px; cursor:pointer; width:100%;">
+    Confirmar Alta
+    </button>
+</form>

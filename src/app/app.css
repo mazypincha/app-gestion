@@ -1,0 +1,15 @@
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f8f9fa; 
+}
+.app-layout { 
+    display: flex; 
+}
+.content-area { 
+    margin-left: 220px; 
+    padding: 30px; 
+    width: 100%; 
+    min-height: 100vh; 
+    box-sizing: border-box; 
+}

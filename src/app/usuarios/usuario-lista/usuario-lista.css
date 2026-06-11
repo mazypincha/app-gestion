@@ -1,0 +1,49 @@
+.user-table{ 
+    width:100%; 
+    border-collapse:collapse; 
+    background:white;
+} 
+.user-table th, .user-table td{ 
+    padding:10px; 
+    border:1px solid #ddd; 
+    text-align:left;
+} 
+.badge-active{ 
+    background:#2ecc71; 
+    color:white; 
+    padding:3px 7px; 
+    border-radius:4px; 
+    font-size:11px;
+} 
+.badge-inactive{ 
+    background:#95a5a6; 
+    color:white; 
+    padding:3px 7px; 
+    border-radius:4px; 
+    font-size:11px;
+} 
+.btn-view{ 
+    background:#3498db; 
+    color:white; 
+    border:none; 
+    padding:5px 8px; 
+    border-radius:4px; 
+    cursor:pointer; margin-right:5px;
+} 
+.btn-toggle{ 
+    background:#f1c40f; 
+    color:#333; 
+    border:none; 
+    padding:5px 8px; 
+    border-radius:4px; 
+    cursor:pointer; 
+    margin-right:5px;
+} 
+.btn-del{ 
+    background:#e74c3c; 
+    color:white; 
+    border:none; 
+    padding:5px 8px; 
+    border-radius:4px; 
+    cursor:pointer;
+}

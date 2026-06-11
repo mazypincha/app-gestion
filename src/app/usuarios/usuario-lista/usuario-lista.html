@@ -1,0 +1,23 @@
+<p>usuario-lista works!</p>
+<h2>Módulo de Usuarios</h2>
+<table class="user-table">
+    <thead>
+    <tr>
+        <th>Nombre</th> <th>Correo</th> <th>Rol</th> <th>Estado</th> <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of lista">
+        <td>{{ user.nombre }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.rol }}</td>
+        <td>
+        <span [class]="user.activo ? 'badge-active' : 'badge-inactive'">
+            {{ user.activo ? 'Activo' : 'Inactivo' }}
+        </span>
+        </td>
+        <td>
+        <button [routerLink]="['/usuarios', user.id]" class="btn-view">Ver Detalle</button> <button (click)="cambiarEstado(user.id)" class="btn-toggle">Alternar Estado</button> <button (click)="borrar(user.id)" class="btn-del">Eliminar</button> </td>
+    </tr>
+    </tbody>
+</table>

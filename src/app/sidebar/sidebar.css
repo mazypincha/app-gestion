@@ -1,0 +1,5 @@
+.sidebar { width: 220px; height: 100vh; background: #2c3e50; color: white; padding: 20px; box-sizing: border-box; position: fixed; }
+    nav a { display: block; color: #b8c7ce; padding: 12px; text-decoration: none; font-weight: bold; border-radius: 4px; margin-bottom: 5px; }
+    nav a:hover, .active { background: #34495e; color: white; }
+    .btn-crear { background-color: #27ae60; color: white; margin-top: 15px; text-align: center; }
+    .btn-crear:hover { background-color: #219653; }

@@ -1,0 +1,9 @@
+<h2>Módulo de Productos</h2>
+<div class="grid">
+    <div *ngFor="let prod of lista" class="card">
+    <h4>{{ prod.titulo }}</h4> <p class="price">Precio: {{ prod.precio | currency:'ARS' }}</p> <p class="desc">{{ prod.descripcion }}</p> <p *ngIf="prod.descuento" class="discount">Descuento: {{ prod.descuento }}% OFF</p>
+    
+    <div class="actions">
+        <button [routerLink]="['/productos', prod.id]" class="btn-view">Ver Detalle</button> <button (click)="borrar(prod.id)" class="btn-del">Eliminar</button> </div>
+    </div>
+</div>
