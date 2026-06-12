@@ -1,59 +1,41 @@
-# AppGestion
+# Aplicación Integral de Gestión de Estado - UTN BA (Trabajo Final)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.11.
+## Descripción del Proyecto
+Este desarrollo representa el Trabajo Final Integrador del curso "Desarrollo en Angular" de la UTN BA. Consiste en una SPA dedicada a la administración de catálogos de productos y control de estados de usuarios en un entorno modularizado de alto rendimiento utilizando Lazy Loading, Rutas Dinámicas y Formularios Reactivos bajo la arquitectura moderna de Componentes Standalone.
 
-## Development server
+## Características del Desarrollo
+- **Estructura Arquitectónica:** Distribución fija mediante Sidebar de navegación interactiva (`routerLink`) y área de inyección dinámica (`router-outlet`).
+- **Módulo Productos:** Despliegue de fichas comerciales parametrizadas (Título, Precio, Descripción, Descuentos) con acciones de eliminación y ruteo dinámico hacia el perfil exclusivo del producto (`/productos/:id`).
+- **Módulo Usuarios:** Tabulación interactiva de perfiles que incluye control de roles y alternancia dinámica de estados de operación (Activo/Inactivo), complementado con formulario de alta controlado con validaciones asincrónicas en la ruta `/crear`.
 
-To start a local development server, run:
+---
 
+## Acceso al Proyecto Publicado
+- **Enlace de la Aplicación Desplegada:** https://app-gestion-woad-five.vercel.app/
+- **Plataforma de Hosting:** Vercel (Ecosistema oficial de despliegue continuo).
+
+---
+
+## Instrucciones de Instalación y Ejecución
+
+Para clonar, instalar las dependencias y ejecutar este proyecto de forma local, siga estos pasos en su terminal:
+
+### 1. Clonar el repositorio
+Descargue una copia local del proyecto ejecutando:
+```bash
+git clone git@github.com:mazypincha/app-formularios.git
+```
+
+### 2. Instalar dependencias
+```bash
+cd app-formularios
+npm install
+```
+
+### 3. Ejecutar la aplicación
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 4. Acceso en el navegador
+http://localhost:4200/

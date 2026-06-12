@@ -1,9 +1,23 @@
 <h2>Módulo de Productos</h2>
-<div class="grid">
-    <div *ngFor="let prod of lista" class="card">
-    <h4>{{ prod.titulo }}</h4> <p class="price">Precio: {{ prod.precio | currency:'ARS' }}</p> <p class="desc">{{ prod.descripcion }}</p> <p *ngIf="prod.descuento" class="discount">Descuento: {{ prod.descuento }}% OFF</p>
-    
-    <div class="actions">
-        <button [routerLink]="['/productos', prod.id]" class="btn-view">Ver Detalle</button> <button (click)="borrar(prod.id)" class="btn-del">Eliminar</button> </div>
-    </div>
-</div>
+<table class="product-table">
+    <thead>
+    <tr>
+        <th>Producto</th> <th>Descripción</th> <th>Precio</th> <th>Descuento</th> <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let prod of lista">
+        <td>{{ prod.titulo }}</td>
+        <td>{{ prod.descripcion }}</td>
+        <td>{{ prod.precio | currency:'ARS':'$ ':'1.2-2' }}</td>
+        <td>
+        <span [class]="prod.descuento ? 'badge-discount' : 'badge-no-discount'">
+            {{ prod.descuento ? prod.descuento + '% OFF' : 'Sin descuento' }}
+        </span>
+        </td>
+        <td>
+        <button [routerLink]="['/productos', prod.id]" class="btn-view">Ver Detalle</button> <button (click)="borrar(prod.id)" class="btn-del">Eliminar</button>
+        </td>
+    </tr>
+    </tbody>
+</table>
