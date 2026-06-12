@@ -23,12 +23,12 @@ Para clonar, instalar las dependencias y ejecutar este proyecto de forma local, 
 ### 1. Clonar el repositorio
 Descargue una copia local del proyecto ejecutando:
 ```bash
-git clone git@github.com:mazypincha/app-formularios.git
+git clone git@github.com:mazypincha/app-gestio.git
 ```
 
 ### 2. Instalar dependencias
 ```bash
-cd app-formularios
+cd app-gestion
 npm install
 ```
 
